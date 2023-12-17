@@ -1,15 +1,15 @@
 ## Начало работы 
 ### Склонируйте репозиторий:
 ```sh
-& git clone https://github.com/lineisover/library
+& git clone https://github.com/LeonidusProd/AtomicHack.git
 ```
 ### Преходим в папку проекта:
 ```sh
-& cd library
+& cd TextAnalytics
 ```
 ### Установить виртуальное окружение:
 ```sh
-& py -3.11 -m venv .venv
+& py -3.12 -m venv .venv
 ```
 `-3.11` - версия python  
 `.venv` - путь к виртуальному окружению  
@@ -19,17 +19,13 @@
 ```sh
 & .venv\Scripts\activate.ps1
 ```
-- Для Linux и MacOS
-```sh
-& source venv/bin/activate
-```
 ### Устанавливаем зависимости:
 ```sh
 & pip install -r requirements.txt
 ```
 ### Запускаем проект:
 ```sh
-& python library\manage.py runserver
+& python manage.py runserver
 ```
 Profit!!!  
-По умолчанию сервер будет запущен по адресу [127.0.0.1:8000](http://127.0.0.1:8000)
+По умолчанию сервер будет запущен по адресу http://127.0.0.1:8000
