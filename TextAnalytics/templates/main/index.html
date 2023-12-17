@@ -11,7 +11,6 @@
 
         <form class="block-txt" method="post">
             {% csrf_token %}
-<!--            <input type="text" id="inputField" placeholder="Введите текст">-->
             {{ form.inp_text }}
             <div class="control">
                 {{ form.inp_sent_count }}
