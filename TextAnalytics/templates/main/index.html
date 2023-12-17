@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container">
+
+        <form class="block-txt" method="post">
+            {% csrf_token %}
+<!--            <input type="text" id="inputField" placeholder="Введите текст">-->
+            {{ form.inp_text }}
+            <div class="control">
+                {{ form.inp_sent_count }}
+                <button class="btn-start">Сократить</button>
+            </div>
+            
+        </form>
+
+        <div class="result">
+            {% for sent in out_text %}
+            • {{ sent }} <br>
+            {% endfor %}
+        </div>
+    </div>
+    
+</body>
+</html>
